@@ -16,7 +16,7 @@ weatherForm.addEventListener('submit', (e) =>  {
             if (data.error) {
                 return messageTwo.textContent = data.error;
             }
-            messageOne.innerHTML = `${data.location}<br>${data.forecast}`
+            messageOne.innerHTML = `${data.location}<br><br>${data.forecast}`
         })
     })
 
